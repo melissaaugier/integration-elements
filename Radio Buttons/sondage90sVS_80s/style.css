@@ -1,0 +1,132 @@
+
+.input-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+
+.container{
+	display: flex;
+}
+
+#sondage{
+	display: flex;
+	margin: 15%;
+}
+
+#sondage label{
+	width: 330px;
+}
+
+
+#pochette-80s{
+	position: absolute;
+	left:354px;
+	top:260px;
+}
+
+
+#pochette-90s{
+	position: absolute;
+	top:266px;
+}
+
+#cd{
+	position:absolute;
+	left: 776px;
+	top:286px;
+}
+
+.container80s:hover #vinyle{
+  animation-play-state: paused; 
+  width:200px;
+  height:200px;
+  position:absolute;
+  animation: spin 10s linear infinite;
+
+  /* Toggle our animation play state to running when we are hovering over our sticker */
+  animation-play-state: running;
+  left:239px;
+  filter: brightness(1.05);
+
+}
+
+.container90s:hover #cd{
+  animation-play-state: paused; 
+  width:200px;
+  height:200px;
+  position:absolute;
+  animation: spin 10s linear infinite;
+
+  /* Toggle our animation play state to running when we are hovering over our sticker */
+  animation-play-state: running;
+  left:807px;
+
+}
+
+.container90s:hover #pochette-90s{
+	  filter: brightness(1.05);
+	  cursor: pointer;
+
+}
+
+.container80s:hover #pochette-80s{
+	  filter: brightness(1.05);
+	  cursor: pointer;
+
+}
+
+
+
+/*input[type=radio]:checked + label>div {
+  border: 1px solid #fff;
+  box-shadow: 0 0 3px 3px #090;
+}
+
+ Stuff after this is only to make things more pretty 
+input[type=radio] + label>div {
+  border: 1px dashed #444;
+  width: 150px;
+  height: 150px;
+  transition: 500ms all;
+}*/
+
+input[type=radio]:checked + label>div #vinyle {
+	width:200px;
+  	height:200px;
+	animation: spin 10s linear infinite;
+  /* Toggle our animation play state to running when we are hovering over our sticker */
+	animation-play-state: running;
+	position:absolute;
+	left: 239px;
+	filter: brightness(2.25);
+}
+
+
+input[type=radio]:checked + label>div #pochette-80s {
+	filter: brightness(1.05);
+}
+
+
+
+input[type=radio]:checked + label>div #cd {
+	width:200px;
+  	height:200px;
+	animation: spin 10s linear infinite;
+  /* Toggle our animation play state to running when we are hovering over our sticker */
+	animation-play-state: running;
+	position:absolute;
+	left: 807px;
+	filter: brightness(1.15);
+}
+
+
+input[type=radio]:checked + label>div #pochette-90s {
+	filter: brightness(1.15);
+
+}
+
+
+@keyframes spin {
+  100% {transform: rotate(1turn); }
+}

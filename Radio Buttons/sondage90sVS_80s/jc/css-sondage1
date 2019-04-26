@@ -1,0 +1,454 @@
+/*
+ * LAYOUT 
+ */
+
+ body {
+    /*background: url('media/desktop_form_vertical.jpg') top center no-repeat;*/ /* Arrière-plan de la page */
+}
+
+
+/*
+ * FONDS D'ECRANS ADDITIONNELS
+ */
+
+#bg-1 {
+    /*background: url('media/bg_1.jpg') top center no-repeat;*/ /* Config du fond d'écran */
+    /*height: 923px;*/ /* Hauteur du fond d'écran */
+}
+
+#bg-2 {
+    /*background: url('media/bg_2.jpg') top center no-repeat;*/ /* Config du fond d'écran */
+    /*height: 923px;*/ /* Hauteur du fond d'écran */
+}
+
+
+/*
+ * CANVAS 
+ */
+
+/*.canvas-tag,
+.canvas-img {
+    width: 400px;
+    height: 300px;
+
+    top: 0;
+    left: 0; 
+    right: 325px; 
+    margin: auto;
+}
+
+.canvas-tag {
+    cursor: url('media/canvas_cursor.png'), pointer;
+}
+
+.canvas-img {
+    background: url('media/canvas_bg.jpg');
+    background-size: 100% 100%;
+}*/
+
+
+/*
+ * BLOC FORMULAIRE
+ */
+ 
+.block:nth-of-type(1) {
+  /*min-height: 800px;*/ /* Hauteur minimum */
+}
+
+
+/*
+ * MESSAGES D'ERREURS 
+ */
+
+.errors {
+    color: #A94449; /* Couleur des messages d'erreurs */
+    background-color: #F2DEDE; /* Couleur de fond des messages d'erreurs */
+}
+
+.optin-error {
+  /* color: red !important; */ /* Couleur des éléments à styliser si les cases optins ne sont pas cochées */
+}
+
+
+/*
+ * BLOC CLÔTURE OPERATION 
+ */
+
+.closing-title {
+/*  background-color: transparent;
+    color: black;*/
+ }
+
+.closing-content {
+/*  background-color: transparent;
+    color: black;*/
+}
+
+
+/*
+ * FORMULAIRE 
+ */
+
+.form {
+    background-color: transparent; /* Couleur de fond */
+    color: black; /* Couleur du texte */
+}
+
+.field-label {
+    /*font-size: 15px;*/ /* Taille des intitulés des champs */
+}
+
+/* Si des bordures doivent être ajoutées aux champs */
+input[type=text],
+input[type=email],
+input[type=tel],
+select {
+  /*border: 1px solid black !important; */
+}
+
+/* Si des bordures ont été ajoutées aux champs.
+NB : La règle '@supports (-ms-ime-align: auto)' permet de cibler Microsoft Edge pour empêcher un décalage */
+/*.field-control.field-select{
+  width: 100%;
+}
+select[name=city] {
+  width: 100%;
+}
+.field-date {
+  width: 100%;
+  white-space: nowrap;
+}
+.field-date select {
+  width: 94.05px;
+}
+@supports (-ms-ime-align: auto) {
+ .field-control.field-date {
+    position: relative;
+    right: 2px;
+ }  
+}*/
+
+
+/*
+ * BLOC CTA 
+ */
+
+/* FOND D'ECRAN CTA */
+.submit-button {
+    /*background: transparent url('media/desktop_cta.png') no-repeat;*/
+}
+
+/* TEXTE OPTIN */
+.form-optin {
+    color: black; /* Couleur du texte */
+}
+
+.form-optin a {
+    color: black; /* Couleur des liens */
+}
+
+.form-optin a {
+    /*text-decoration: none;*/ /* Style des liens */
+}
+
+/* TEXTE OPTOUT */
+.form-optout {
+  color: black; /* Couleur du texte */
+}
+
+.submit-group .optout-submit-button {
+    color: black; /* Couleur des liens */
+}
+
+
+/*
+ * FOOTER 
+ */
+
+/* MENU */
+.footer-menu {
+    /*color: black;*/ /* Couleur du texte */
+}
+
+.footer-menu a {
+    /*color: black;*/ /* Couleur des liens */
+}
+
+/* CONTENU */
+.footer-content {
+    /*color: black;*/ /* Couleur du texte */
+}
+
+.footer-content a {
+    /*color: black;*/ /* Couleur des liens */
+}
+
+/*
+ * STYLES SCRIPTS PCO 
+ */
+
+.pco-mut ul li img {
+  filter: saturate(0%);
+}
+
+.pco-mut {
+  transform: scale(0.85);
+}
+
+
+/*
+ *
+ * STYLES POUR MOBILE
+ *
+ */
+
+@media screen and (max-width: 1023px) {
+    
+    /*
+     * LAYOUT 
+     */
+    
+    body {
+        /*background: url('media/mobile_form_vertical.jpg') top center no-repeat;*/ /* Arrière-plan de la page */
+        background-size: 1024px; /* Dimensions de l'arrière-plan */
+    }
+
+
+    /*
+     * CANVAS 
+     */
+
+/*  .canvas-tag,
+    .canvas-img {
+        width: 200px;
+        height: 150px;
+
+        top: 0;
+        left: 0; 
+        right: 0; 
+        margin: auto;
+    }
+
+    .canvas-tag {
+        cursor: url('media/canvas_cursor.png'), pointer;
+    }
+
+    .canvas-img {
+        background: url('media/mobile_canvas_bg.jpg');
+        background-size: 100% 100%;
+    }*/
+
+
+    /*
+     * CTA 
+     */
+    
+    /* FOND D'ECRAN CTA */
+    .submit-button {
+        /*background: transparent url('media/mobile_cta.png') no-repeat;*/
+    }
+}
+
+
+/*
+ *
+ * ANIMATIONS
+ *
+ */
+
+/*
+ * Animation CTA
+ */
+
+.form-submit {
+    animation-name: animateCTA;
+    animation-direction: alternate;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animateCTA {
+    from {
+    transform: scale(1);
+    }
+
+    to {
+    transform: scale(1.1);
+    }
+}
+
+
+
+
+/****************************
+SONDAGE 
+*****************************/
+
+
+
+
+
+.input-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+
+.container{
+  display: flex;
+}
+
+#sondage{
+  display: flex;
+  margin: -9%;
+}
+
+#sondage label{
+  width: 330px;
+}
+
+
+#pochette-80s{
+  position: absolute;
+  left:92px;
+  top:261px;
+}
+
+
+#pochette-90s{
+  position: absolute;
+  top:266px;
+  left:336px;
+}
+
+#cd{
+  position:absolute;
+  left: 462px;
+  top:286px;
+}
+
+#vinyle {
+    position: relative;
+    top: 378px;
+    left: 117px;
+}
+
+.container80s:hover #vinyle{
+  animation-play-state: paused; 
+  width:200px;
+  height:200px;
+  position:absolute;
+  animation: spin 10s linear infinite;
+
+  /* Toggle our animation play state to running when we are hovering over our sticker */
+  animation-play-state: running;
+  left:0px;
+  top:283px;
+  filter: brightness(1.05);
+
+}
+
+.container90s:hover #cd{
+  animation-play-state: paused; 
+  width:200px;
+  height:200px;
+  position:absolute;
+  animation: spin 10s linear infinite;
+
+  /* Toggle our animation play state to running when we are hovering over our sticker */
+  animation-play-state: running;
+  left:494px;
+
+}
+
+.container90s:hover #pochette-90s{
+    filter: brightness(1.15);
+    cursor: pointer;
+
+}
+
+.container80s:hover #pochette-80s{
+    filter: brightness(1.15);
+    cursor: pointer;
+
+}
+
+
+
+/*input[type=radio]:checked + label>div {
+  border: 1px solid #fff;
+  box-shadow: 0 0 3px 3px #090;
+}
+
+ Stuff after this is only to make things more pretty 
+input[type=radio] + label>div {
+  border: 1px dashed #444;
+  width: 150px;
+  height: 150px;
+  transition: 500ms all;
+}*/
+
+input[type=radio]:checked + label>div #vinyle {
+  width:200px;
+    height:200px;
+  animation: spin 10s linear infinite;
+  /* Toggle our animation play state to running when we are hovering over our sticker */
+  animation-play-state: running;
+  position:absolute;
+  left: 20px;
+  top:285px;
+  filter: brightness(1.15);
+}
+
+input[type=radio]:checked + label>div #pochette-80s {
+  filter: brightness(1.25);
+}
+
+input[type="checkbox"]:not(:checked) + label>div #pochette-80s{
+    filter:brightness(0.1);
+}
+
+
+input[type=radio]:checked + label>div #cd {
+  width:200px;
+    height:200px;
+  animation: spin 10s linear infinite;
+  /* Toggle our animation play state to running when we are hovering over our sticker */
+  animation-play-state: running;
+  position:absolute;
+  left: 462px;
+  filter: brightness(1.15);
+}
+
+
+input[type=radio]:checked + label>div #pochette-90s {
+  filter: brightness(1.25);
+
+}
+
+
+@keyframes spin {
+  100% {transform: rotate(1turn); }
+}
+
+.canvas-container{
+  height: 0px;
+}
+
+
+@media screen and (max-width: 1023px) {
+    #vinyle img, #cd img{width:90px;}
+    .canvas-tag{display:none;}
+    #pochette-80s img{width:130px;}
+    #pochette-90s img{width:120px;}
+    #pochette-80s{left:40px;top:64px;}
+    #pochette-90s{left:154px;top:64px;}
+    #vinyle{top:108px;left:42px;width:90px;}
+    input[type=radio]:checked + label>div #vinyle{width: 90px;height: 90px;left:0;top:78px;}
+    #cd{top:78px;left:214px;width:90px;}
+    input[type=radio]:checked + label>div #cd{width:90px;height: 90px;left:230px;top:78px;}
+}
+
+
+
